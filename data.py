@@ -11,6 +11,7 @@ elements_df = pd.DataFrame(json['elements'])
 element_types_df = pd.DataFrame(json['element_types'])
 teams_df = pd.DataFrame(json['teams'])
 
+# create player history table
 players_history = pd.DataFrame()
 for p_id in elements_df['id']:
     url = 'https://fantasy.premierleague.com/api/element-summary/' + str(p_id)
